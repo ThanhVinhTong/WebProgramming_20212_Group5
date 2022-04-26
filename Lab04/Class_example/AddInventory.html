@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Add Inventory Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <font size=4 color="blue">Welcome to Add inventory Page <br/> </font>
+        <div>
+            <br/> Initial array with index and value: <br/>
+                Index is Nuts, value is 44<br/>
+                Index is Nails, value is 34<br/>
+                Index is Bolts, value is 31<br/>
+        </div>
+        <p>Select a operation:</p>
+        <form action="AddInventory.php" method="POST">
+            <input type="radio" name="Action" value="Add" > Add
+            <input type="radio" name="Action" value="Unknown" > Unknown
+            <br/>
+            Enter Index: <input type="text" name="index" size=10>
+            Enter Value: <input type="text" name="value" size=10>
+            <br/> <br/>
+            <input type="SUBMIT" value="Cick to submit">
+            <input type="RESET" value="Erase and Restart">
+        </form>
+        
+    </body>
+</html>
