@@ -1,0 +1,18 @@
+H1 {
+    text-align: center
+}
+P{
+    margin: 0.25in;
+    border: 0.25in solid black;
+    padding: 0.25in;
+    background: url(paper.png)
+}
+BODY { 
+    background: url(bricks.jpg) 
+}
+.banner{
+    background: url(board.jpg);
+    background-size: 350px 225px;
+    font-size: 30pt;
+    font-family: Arial Rounded MT Bold
+}

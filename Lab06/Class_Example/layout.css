@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: red;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: flex;
+}
+
+/* Style the content */
+article {
+    float: left;
+  width: 75%;
+  background-color: white;
+  padding: 10px;
+}
+
+side-bar{
+    float: right;
+ width: 25%;
+  background-color: yellow;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: blue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
