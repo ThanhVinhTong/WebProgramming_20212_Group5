@@ -1,0 +1,24 @@
+Compare preg_match()function with ereg() funtion:
+It's mostly the same exempt when you use preg functions, 
+the pattern isn't just the string pattern; it also needs delimiters
+
+Compare preg_replace() function with ereg_replace() function:
+Also mostly the same, the only difference is pretty obscure. 
+If you use a number (not a string) as a pattern or replacement value in ereg_replace( ) , 
+it's assumed you are referring to the ASCII value of a character. 
+Therefore, since 9 is the ASCII representation of tab (i.e., \t), 
+this code inserts tabs at the beginning of each line: 
+
+$tab = 9; 
+$replaced = ereg_replace('^', $tab, $string); 
+
+Here's how to convert linefeed endings: 
+$converted = ereg_replace(10, 12, $text); 
+
+To avoid this feature in ereg functions, use this instead: 
+$tab = '9'; 
+
+On the other hand, preg_replace( ) treats the number 9 as the number 9, not as a tab substitute. 
+To convert these character codes for use in preg_replace( ), convert them to hexadecimal and 
+prefix them with \x. For example, 9 becomes \x9 or \x09, and 12 becomes \x0c. 
+Alternatively, you can use \t , \r, and \n for tabs, carriage returns, and linefeeds, respectively.
