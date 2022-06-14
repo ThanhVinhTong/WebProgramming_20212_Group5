@@ -1,0 +1,23 @@
+<HTML> 
+    <BODY> 
+    <SCRIPT type = "text/javascript"> 
+        function superClass() {
+            this.bye = superBye; 
+            this.hello = superHello;
+        }
+        function subClass() {
+            this.abc = superClass;
+            this.abc();
+            this.bye = subBye;
+        }
+
+        function superHello() { return "Hello superClass";}
+        function superBye() { return "Bye superClass"; }
+        function subBye() { return "Bye subClass"; }
+
+        var newClass = new subClass();
+        alert(newClass.bye());
+        alert(newClass.hello());
+    </SCRIPT> 
+    </BODY> 
+</HTML>
