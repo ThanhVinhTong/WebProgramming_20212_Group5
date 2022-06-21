@@ -1,0 +1,10 @@
+Web3 Idea:
+
+Bank Application
+
+Each user will use their Metamask wallet as their account
+Our application will have its own native token called FAF token
+User will stake a certain amount of token into our application
+That amount of token will then be converted to our FAF token
+Those FAF token in their account will increase according to our bank interes rate
+User can withdrawn their money after that
