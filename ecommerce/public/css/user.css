@@ -36,7 +36,7 @@
 }
 
 body {
-    background-image: url("http://localhost/ecommerce/public/images/logo/background.gif");
+    background-image: url("http://localhost/ecommerce/public/images/logo/background.png");
     height: 100vh;
     margin: unset;
     background-position: center;
